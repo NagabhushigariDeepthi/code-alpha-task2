@@ -1,0 +1,5 @@
+User : Investor
+Balance : ₹97300.0
+
+Holdings
+AAPL -> 15
