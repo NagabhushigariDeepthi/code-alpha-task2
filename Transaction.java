@@ -1,0 +1,27 @@
+package StockTradingPlatform;
+
+class Transaction {
+
+    private String type;
+    private String stockSymbol;
+    private int quantity;
+    private double amount;
+
+    public Transaction(String type, String stockSymbol,
+                       int quantity, double amount) {
+
+        this.type = type;
+        this.stockSymbol = stockSymbol;
+        this.quantity = quantity;
+        this.amount = amount;
+    }
+
+    @Override
+    public String toString() {
+
+        return type +
+                " | Stock: " + stockSymbol +
+                " | Qty: " + quantity +
+                " | Amount: ₹" + String.format("%.2f", amount);
+    }
+}
